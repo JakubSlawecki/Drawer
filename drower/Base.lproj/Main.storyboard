@@ -37,7 +37,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VkT-Vh-bN8" secondAttribute="trailing" id="08o-8v-VaC"/>
-                            <constraint firstAttribute="bottom" secondItem="VkT-Vh-bN8" secondAttribute="bottom" id="9X0-uD-ZJB"/>
+                            <constraint firstItem="VkT-Vh-bN8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="9X0-uD-ZJB"/>
                             <constraint firstItem="u8I-Lv-jMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mux-xM-Dog"/>
                             <constraint firstItem="VkT-Vh-bN8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RDc-cG-BVr"/>
                             <constraint firstItem="u8I-Lv-jMa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="aw4-Il-rV4"/>
