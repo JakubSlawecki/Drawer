@@ -39,6 +39,7 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
     private var runningAnimators  = [UIViewPropertyAnimator]()
     private var animationProgress = [CGFloat]()
     
+    
     var currentState: State = .closed
     var popupOffset: CGFloat = 400
     

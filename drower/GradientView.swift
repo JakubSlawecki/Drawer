@@ -13,6 +13,7 @@ class GradientView: UIView {
     var shadowView : UIView = UIView()
     var cardView : UIView = UIView()
     var gradientLayer : CAGradientLayer = CAGradientLayer()
+    var handlebar: HandlebarView = HandlebarView()
     
     var topColor: UIColor = .white {
         didSet {
@@ -76,7 +77,15 @@ class GradientView: UIView {
         cardView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         cardView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         cardView.backgroundColor = UIColor.black
-            
+        
+        self.addSubview(handlebar)
+        handlebar.translatesAutoresizingMaskIntoConstraints = false
+        handlebar.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        handlebar.heightAnchor.constraint(equalToConstant: 5).isActive = true
+        handlebar.topAnchor.constraint(equalTo: self.topAnchor, constant: 12).isActive = true
+        handlebar.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+           
+        self.sendSubviewToBack(handlebar)
         self.sendSubviewToBack(cardView)
         self.sendSubviewToBack(shadowView)
             
