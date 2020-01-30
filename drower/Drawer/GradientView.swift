@@ -111,14 +111,13 @@ class GradientView: UIView {
         gradientLayer.frame = cardView.bounds
         
         updateGradientColors()
-        if #available(iOS 13.0, *) {
-            if UITraitCollection.current.userInterfaceStyle == .dark {
-                gradientLayer.locations = [0.0, 0.4]
-            }
-            else {
-                gradientLayer.locations = [0.0, 0.5]
-            }
+        
+        if UITraitCollection.current.userInterfaceStyle == .dark {
+            gradientLayer.locations = [0.0, 0.5]
+        } else {
+            gradientLayer.locations = [0.0, 0.5]
         }
+        
     }
     
     private func updateGradientColors() {

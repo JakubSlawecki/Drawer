@@ -28,20 +28,36 @@ extension State {
 protocol DrawerViewDelegate: AnyObject {
     func drawerViewOpeaningAnimation()
     func drawerViewClosingAnimation()
-    
-    func didFinichOpeaningDrawerView()
-    func didFinishClosingDrawerView()
 }
 
 class DrawerView: GradientView, UIGestureRecognizerDelegate {
-    weak var delegate: DrawerViewDelegate?
+    
+    /// This value indicates how much the DrawerView should stick out over the edge in its **open** state,
+    /// so this value tells its height.
+    ///
+    /// ### Usage Example: ###
+    /// ````
+    /// DrawerView.drawerViewSize = UIScreen.main.bounds.height * 0.8
+    /// or
+    /// DrawerView.drawerViewSize = 400
+    /// ````
+    /// * in the first example, Drawer will have a height of 80% of the screen height
+    /// * in the second example, Drawer will have a height of 400
+    var drawerViewSize = UIScreen.main.bounds.height * 0.8
+    
+    /// This value indicates how much the DrawerView should stick out over the edge in its **closed** state
+    ///
+    /// ## Important Notes ##
+    /// 0 means that DrawerView is completely hidden, the higher the value, the more it will stick out
+    var drawerViewOffset: CGFloat = 100
     
     private var runningAnimators  = [UIViewPropertyAnimator]()
     private var animationProgress = [CGFloat]()
+    private var currentState: State = .closed
     
+    weak var delegate: DrawerViewDelegate?
     
-    var currentState: State = .closed
-    var popupOffset: CGFloat = 400
+    var popupOffset: CGFloat = 0
     
     lazy var panRecognizer: UIPanGestureRecognizer = {
         let recognizer = UIPanGestureRecognizer()
@@ -59,18 +75,19 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
         setupUI()
     }
     
-    func setupUI () {
+    private func setupUI () {
+        popupOffset = -drawerViewSize + drawerViewOffset
+        
         addGestureRecognizer(panRecognizer)
         self.translatesAutoresizingMaskIntoConstraints = false
-      
         self.cornerRadius = 25
         self.shadowColor = UIColor.black
         self.shadowOffset = CGSize(width: 0, height: -1.8)
         self.shadowRadius = 2.2
         self.shadowOpacity = 0.08
-        
+
         self.topColor = UIColor.white
-        self.bottomColor = UIColor.white
+        self.bottomColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         
         let dampingView = UIView()
         
@@ -91,7 +108,7 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
             animationProgress = runningAnimators.map { $0.fractionComplete }
         case .changed:
             let translation = recognizer.translation(in: self)
-            var fraction = -translation.y / popupOffset
+            var fraction = translation.y / popupOffset
             
             if currentState == .open { fraction *= -1 }
             if runningAnimators[0].isReversed { fraction *= -1 }
@@ -129,8 +146,6 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
         transitionAnimator.addAnimations {
             switch state {
                 //opeaningAnimation / closingAnimation
-                
-                #warning("change to two delegate functions")
             case .open:
                 self.delegate?.drawerViewOpeaningAnimation()
             case .closed:
@@ -152,12 +167,10 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
             }
             
             switch self.currentState {
-                //didFinishClosingView/ didFinichOpeaningView
-                #warning("change to two delegate functions")
             case .open:
-                self.delegate?.didFinichOpeaningDrawerView()
+                self.delegate?.drawerViewOpeaningAnimation()
             case .closed:
-                self.delegate?.didFinishClosingDrawerView()
+                self.delegate?.drawerViewClosingAnimation()
             }
             self.runningAnimators.removeAll()
         }
@@ -170,4 +183,3 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
         
     }
 }
-

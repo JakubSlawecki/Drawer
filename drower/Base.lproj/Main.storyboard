@@ -23,10 +23,10 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VkT-Vh-bN8" secondAttribute="trailing" id="08o-8v-VaC"/>
-                            <constraint firstItem="VkT-Vh-bN8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="9X0-uD-ZJB"/>
+                            <constraint firstAttribute="bottom" secondItem="VkT-Vh-bN8" secondAttribute="bottom" id="9X0-uD-ZJB"/>
                             <constraint firstItem="VkT-Vh-bN8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RDc-cG-BVr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
