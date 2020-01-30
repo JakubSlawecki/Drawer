@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:drower.xcodeproj">
+      location = "self:/Users/jakubslawecki/Documents/workspace/Drower/Drawer.xcodeproj">
    </FileRef>
 </Workspace>

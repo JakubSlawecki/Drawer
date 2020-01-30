@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C66F892123E215D9008FEA90 /* drower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66F892123E215D9008FEA90 /* Drawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66F892423E215D9008FEA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C66F892623E215D9008FEA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C66F892823E215D9008FEA90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		C66F892223E215D9008FEA90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C66F892123E215D9008FEA90 /* drower.app */,
+				C66F892123E215D9008FEA90 /* Drawer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C66F892023E215D9008FEA90 /* drower */ = {
+		C66F892023E215D9008FEA90 /* Drawer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C66F893523E215DB008FEA90 /* Build configuration list for PBXNativeTarget "drower" */;
+			buildConfigurationList = C66F893523E215DB008FEA90 /* Build configuration list for PBXNativeTarget "Drawer" */;
 			buildPhases = (
 				C66F891D23E215D9008FEA90 /* Sources */,
 				C66F891E23E215D9008FEA90 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = drower;
+			name = Drawer;
 			productName = drower;
-			productReference = C66F892123E215D9008FEA90 /* drower.app */;
+			productReference = C66F892123E215D9008FEA90 /* Drawer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C66F891C23E215D9008FEA90 /* Build configuration list for PBXProject "drower" */;
+			buildConfigurationList = C66F891C23E215D9008FEA90 /* Build configuration list for PBXProject "Drawer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C66F892023E215D9008FEA90 /* drower */,
+				C66F892023E215D9008FEA90 /* Drawer */,
 			);
 		};
 /* End PBXProject section */
@@ -311,8 +311,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jakub-Slawecki.drower";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jakub-Slawecki.drawerView";
+				PRODUCT_NAME = Drawer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -329,8 +329,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jakub-Slawecki.drower";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jakub-Slawecki.drawerView";
+				PRODUCT_NAME = Drawer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C66F891C23E215D9008FEA90 /* Build configuration list for PBXProject "drower" */ = {
+		C66F891C23E215D9008FEA90 /* Build configuration list for PBXProject "Drawer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C66F893323E215DB008FEA90 /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C66F893523E215DB008FEA90 /* Build configuration list for PBXNativeTarget "drower" */ = {
+		C66F893523E215DB008FEA90 /* Build configuration list for PBXNativeTarget "Drawer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C66F893623E215DB008FEA90 /* Debug */,
