@@ -43,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C653A17923E2E98D0092FBC0 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				C6E7176623E2172F00A71610 /* DrawerView.swift */,
+				C6E7176823E217EA00A71610 /* GradientView.swift */,
+				C68011E523E2D0C9001BEE18 /* HandlebarView.swift */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
 		C66F891823E215D9008FEA90 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +75,7 @@
 				C66F892423E215D9008FEA90 /* AppDelegate.swift */,
 				C66F892623E215D9008FEA90 /* SceneDelegate.swift */,
 				C66F892823E215D9008FEA90 /* MainViewController.swift */,
-				C6E7176623E2172F00A71610 /* DrawerView.swift */,
-				C6E7176823E217EA00A71610 /* GradientView.swift */,
-				C68011E523E2D0C9001BEE18 /* HandlebarView.swift */,
+				C653A17923E2E98D0092FBC0 /* Drawer */,
 				C66F892A23E215D9008FEA90 /* Main.storyboard */,
 				C66F892D23E215DB008FEA90 /* Assets.xcassets */,
 				C66F892F23E215DB008FEA90 /* LaunchScreen.storyboard */,
