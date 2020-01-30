@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: State of the SlideView
+// MARK: State of the DrawerView
 enum State {
     case closed
     case open

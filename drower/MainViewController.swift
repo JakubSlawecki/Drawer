@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  drower
 //
 //  Created by Jakub Slawecki on 29/01/2020.
