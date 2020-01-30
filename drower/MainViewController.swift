@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var drawerBottomConstraint: NSLayoutConstraint!
     
     // This value determines how visible SlideView is in close state
-    let drawerViewOffset: CGFloat = 175
+    let drawerViewOffset: CGFloat = 100
     
     
     
@@ -29,17 +29,13 @@ class MainViewController: UIViewController {
         
         let screenSize: CGRect = UIScreen.main.bounds
         // This value determines how visible SlideView is in open state
-        let drawerViewSize = screenSize.height * 0.9
+        let drawerViewSize = screenSize.height * 0.8
         
         drawerView.panRecognizer.delegate = self
         drawerView.delegate = self
         drawerView.popupOffset = drawerViewSize - drawerViewOffset
         drawerHeightConstraint.constant = drawerViewSize
         drawerBottomConstraint.constant = drawerView.popupOffset
-    }
-
-    @IBAction func button(_ sender: Any) {
-        drawerView.animateTransitionIfNeeded(to: .closed, duration: 0.6)
     }
     
 }

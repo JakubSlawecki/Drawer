@@ -13,6 +13,7 @@
 		C66F892C23E215D9008FEA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66F892A23E215D9008FEA90 /* Main.storyboard */; };
 		C66F892E23E215DB008FEA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66F892D23E215DB008FEA90 /* Assets.xcassets */; };
 		C66F893123E215DB008FEA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66F892F23E215DB008FEA90 /* LaunchScreen.storyboard */; };
+		C68011E623E2D0C9001BEE18 /* HandlebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68011E523E2D0C9001BEE18 /* HandlebarView.swift */; };
 		C6E7176723E2172F00A71610 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7176623E2172F00A71610 /* DrawerView.swift */; };
 		C6E7176923E217EA00A71610 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7176823E217EA00A71610 /* GradientView.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		C66F892D23E215DB008FEA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C66F893023E215DB008FEA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C66F893223E215DB008FEA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68011E523E2D0C9001BEE18 /* HandlebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlebarView.swift; sourceTree = "<group>"; };
 		C6E7176623E2172F00A71610 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		C6E7176823E217EA00A71610 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 				C66F892823E215D9008FEA90 /* MainViewController.swift */,
 				C6E7176623E2172F00A71610 /* DrawerView.swift */,
 				C6E7176823E217EA00A71610 /* GradientView.swift */,
+				C68011E523E2D0C9001BEE18 /* HandlebarView.swift */,
 				C66F892A23E215D9008FEA90 /* Main.storyboard */,
 				C66F892D23E215DB008FEA90 /* Assets.xcassets */,
 				C66F892F23E215DB008FEA90 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68011E623E2D0C9001BEE18 /* HandlebarView.swift in Sources */,
 				C6E7176923E217EA00A71610 /* GradientView.swift in Sources */,
 				C66F892923E215D9008FEA90 /* MainViewController.swift in Sources */,
 				C66F892523E215D9008FEA90 /* AppDelegate.swift in Sources */,
