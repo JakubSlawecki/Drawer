@@ -70,7 +70,17 @@ class DrawerView: GradientView, UIGestureRecognizerDelegate {
         self.shadowOpacity = 0.08
         
         self.topColor = UIColor.white
-        self.bottomColor = UIColor.systemGroupedBackground
+        self.bottomColor = UIColor.white
+        
+        let dampingView = UIView()
+        
+        self.addSubview(dampingView)
+        dampingView.translatesAutoresizingMaskIntoConstraints = false
+        dampingView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        dampingView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        dampingView.topAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        dampingView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        dampingView.backgroundColor = self.bottomColor
     }
     
     @objc private func popupViewPanned(recognizer: UIPanGestureRecognizer) {
